@@ -6,7 +6,8 @@ sudo mkdir -p /data/esdb/index
 sudo chown eventstore:eventstore /data/esdb
 sudo chown eventstore:eventstore /data/esdb/index
 cd /etc/eventstore/
-sudo sh -c 'cat << EOF > eventstore.conf
+sudo rm eventstore.conf
+sudo sh -c 'cat << EOF >> eventstore.conf
 IntIp: 0.0.0.0
 ExtIp: 0.0.0.0
 IntHttpPrefixes: http://*:2112/
