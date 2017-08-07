@@ -11,7 +11,7 @@ sudo sh -c 'cat << EOF >> eventstore.conf
 IntIp: 0.0.0.0
 ExtIp: 0.0.0.0
 IntHttpPrefixes: http://*:2112/
-ExtHttpPrefixes: http://*:2113/+
+ExtHttpPrefixes: http://*:2113/
 AddInterfacePrefixes: false
 RunProjections: All
 Db: /data/esdb
